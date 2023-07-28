@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e00e54333c.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Sevices</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()">A</i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()">B</i>
+
+            </nav>
+            <div class="header-text">
+                <p>Front-End Web Developer</p>
+                <h1>Hi, I'm <span>Nataliya</span><br>Uzuncheva from Bulgaria</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MyPhoto.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am actively seeking entry-level Front-End Web Developer 
+                        opportunities to learn, grow, and make a meaningful contribution 
+                        to the tech community. Let's connect to discuss how my skills can 
+                        add value to your organization, or to simply share ideas 
+                        and insights about the world of web development.</p>
+                
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development <br</li>
+                                <li><span>Development</span><br>Web development with Java and C#</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>C#</span><br>Application development for students</li>
+                                <li><span>Vaadin</span><br>Vaadin project with Spring Boot<br</li>
+                                <li><span>Web Development</span><br>Web with HTML CSS and JS <br</li>
+                                <li><span>Online store</span><br>Online store on Wordpress and OpenCard</li>
+                                <li><span>Bootstrap 5</span><br>Development of News site <br</li>
+                                <li><span>Adobe Photoshop, Illustrator and inDesign</span><br>Creating a magazine cover, flayer, card, photo editing</li>
+                            
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018-2022</span><br>Bachelor of Software technology and design</li>
+                                <li><span>2023</span><br>Master of Software Technology with architectures and tools <br</li>
+                                <li><span>2023</span><br>Codecademy course with HTML, CSS, JS, React, GIT </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+            </div>
+        </div>
+    </div>
+<!-- ------ services -------- -->
+<div id="services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Aperiam at quisquam quidem, quod ullam maiores laborum commodi ducimus voluptatum et quos exercitationem amet eligendi 
+                nulla ratione doloremque minima quo quaerat?</p>
+                <a href="#">learn more</a>
+        </div>
+        <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Aperiam at quisquam quidem, quod ullam maiores laborum commodi ducimus voluptatum et quos exercitationem amet eligendi 
+                nulla ratione doloremque minima quo quaerat?</p>
+                <a href="#">learn more</a>
+        </div>
+        <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Aperiam at quisquam quidem, quod ullam maiores laborum commodi ducimus voluptatum et quos exercitationem amet eligendi 
+                nulla ratione doloremque minima quo quaerat?</p>
+                <a href="#">learn more</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ------- portfolio -------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/MyPhoto.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the telented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/MyPhoto.jpg" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you yo the telented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/MyPhoto.jpg" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the telented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> nataliq.uzuncheva@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +359892051762</p>
+                <div class="social-icons">
+                    <a href=""> <i class="fab fa-facebook"></i></a>
+                    <a href=""> <i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV -Nataliya Uzuncheva (EU).pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Nataliya. Made with <i class="fas fa-heart"></i></p>
+        </div>
+        </div>
+</div>
+
+
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+
+   <script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+   </script>
+</body>
+</html>
